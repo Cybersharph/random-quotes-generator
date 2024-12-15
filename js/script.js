@@ -47,8 +47,8 @@ function printQuote() {
   let randomIndex = getRandomQuote(); // Generate a random index.
 
   // Access DOM elements using class names.
-  let quoteParagraph = document.getElementsByClassName("quote"); 
-  let quoteAuthor = document.getElementsByClassName("source");
+  let quoteParagraph = document.querySelectorAll(".quote");
+  let quoteAuthor = document.querySelectorAll(".author");
 
   // Update the HTML content with the random quote and author.
   quoteParagraph[0].textContent = quotes[randomIndex].quote;
